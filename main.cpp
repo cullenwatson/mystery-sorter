@@ -28,6 +28,21 @@ int main() {
     mystery03(data, 50);
     end = high_resolution_clock::now();
     getTime(start, end);
+
+    start = high_resolution_clock::now();
+    mystery03(data, 50);
+    end = high_resolution_clock::now();
+    getTime(start, end);
+
+    start = high_resolution_clock::now();
+    mystery03(data, 50);
+    end = high_resolution_clock::now();
+    getTime(start, end);
+
+    start = high_resolution_clock::now();
+    mystery03(data, 50);
+    end = high_resolution_clock::now();
+    getTime(start, end);
     return 0;
 }
 double getTime(time_point<high_resolution_clock> start, time_point<high_resolution_clock> end){
@@ -43,7 +58,7 @@ void outputTime(int data[], void (*f)(int [], int)){
     double average= 0;
     for(int i=0; i<5; i++){
         start = high_resolution_clock::now();
-        mystery05(data, 50);
+        f(data, 50);
         end = high_resolution_clock::now();
         average += getTime(start, end);
     }
