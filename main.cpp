@@ -1,3 +1,9 @@
+/*
+ * NOTE:
+ * During my analysis, I used
+ * sizes 100,000 and 1,000,000 to get a bigger time difference between trials.
+ * However, the arrays in this file are size 10,000 and 100,000 to reduce execution time.
+ */
 #include <iostream>
 #include <chrono>
 #include "include/sorting_library.h"
@@ -16,6 +22,7 @@ int main() {
     cout.precision(9);
 
 
+    // create two arrays of diff sizes with random data
     int data[10000],data2[100000];
     cout<<"\n------ALL FUNCTIONS (SEEING WHICH FUNCTIONS ARE O(n^2) AND O(n log(n))------\n";
     randomData(data,10000);
@@ -42,6 +49,7 @@ int main() {
     outputTime(data, &mystery05, 10000);
     outputTime(data2, &mystery05, 100000);
 
+    // now sort the arrays
     cout<<"\n------O(n^2) FUNCTIONS (COMPARING BEST CASES TO FIND SELECTION SORT)------\n";
     sortedData(data, 10000);
     sortedData(data2, 100000);
@@ -58,6 +66,7 @@ int main() {
     outputTime(data, &mystery05, 10000);
     outputTime(data2, &mystery05, 100000);
 
+    // use random data
     cout<<"\n------O(n^2) FUNCTIONS (COMPARING EXECUTION TIME FOR INSERTION AND BUBBLE)------\n";
     randomData(data2,100000);
 
@@ -67,6 +76,7 @@ int main() {
     cout<<"\nMYSTERY 3 TIMES WITH RANDOM DATA, SIZE 100,000\n";
     outputTime(data2, &mystery03, 100000);
 
+    // use sorted data
     cout<<"\n------O(n^2) FUNCTIONS (FINDING WORST CASE FOR QUICKSORT)------\n";
     sortedData(data, 10000);
     sortedData(data2, 100000);
