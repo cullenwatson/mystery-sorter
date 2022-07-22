@@ -1,4 +1,4 @@
-**Sorting Algo Analysis**
+<h2>Sorting Algo Analysis</h2>
 
 A code base to determine 5 sorting algorithms only given the ability to call the functios of the 5 algos. 
 
