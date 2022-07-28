@@ -79,6 +79,13 @@ test cases.
   <img src="https://user-images.githubusercontent.com/78247585/181486190-968f9597-d424-4f73-8a29-fd5d572d236c.png">
 </p>
 
+# How to Run (must use WSL toolchain)
+
+* Use the CMakeLists.txt to run `cmake` and `make`
+* Execute `sorting_mystery`
+
+The program will display the execution run times of different sized datasets being passed to the sorting algorithms. The datasets were either sorted, random, or reverse sorted to induce worst or best case performance in the sorting algos.
+
 
 
 
