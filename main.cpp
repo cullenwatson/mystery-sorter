@@ -89,6 +89,9 @@ int main() {
     outputTime(data, &mystery04, 10000);
     outputTime(data2, &mystery04, 100000);
 
+    cout<<"\nPress enter to quit program:"<<endl;
+    cin.get();
+
     return 0;
 }
 void randomData(int data[], int size){
