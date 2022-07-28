@@ -16,7 +16,7 @@ The five possible sorting algorithms that the functions undertook were:
 * insertion sort
 * merge sort
 * quicksort (with last element as pivot)
-* election sort.
+* election sort
 
 ## Analysis
 
